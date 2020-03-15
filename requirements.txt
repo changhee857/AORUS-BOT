@@ -1,2 +1,2 @@
 discord.py==19.2.3
-asyncio.py==19.2.3
+discord.py==19.2.3
