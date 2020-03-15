@@ -34,7 +34,7 @@ async def _ban(ctx, *, user_name: discord.Member):
 async def _HumanRole(ctx, member: discord.Member=None):
     member = member or ctx.message.author
     await member.add_roles(get(ctx.guild.roles, name="AORUS 시민"))
-    await ctx.channel.send("인증이 정상적으로 처리되었습니다.")
+    await ctx.channel.send str(member)+("인증이 정상적으로 처리되었습니다.")
 
 
 @app.event
