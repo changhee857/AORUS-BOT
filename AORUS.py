@@ -1,12 +1,14 @@
 import asyncio
 import discord
+import os
 from discord.ext import commands
 from discord.utils import get
 
 
 app = commands.Bot(command_prefix='어로스 봇')
 
-token = "Njg4NDQyMjIwNzg1MDQxNDQ1.Xm5gVg.2V28L3fxFqkPDrZd54fyZrw2hK8"
+access_token = os.environ["BOT_TOKEN"]
+token = "access_token"
 calcResult = 0
 
 @app.event
