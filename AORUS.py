@@ -37,7 +37,6 @@ async def _HumanRole(ctx, member: discord.Member=None):
     await ctx.channel.send("인증이 정상적으로 처리되었습니다.")
 
 
-
 @app.event
 async def on_message(message):
     await app.process_commands(message)
